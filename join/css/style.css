@@ -1,0 +1,181 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body
+{
+	font-size: 20px;
+	overflow-x: hidden; 
+	color: white; 
+	font-family:'Flamenco',cursive;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/join.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	height: 200vh;
+}
+.clearfix:after
+{
+	content: ".";
+	visibility: hidden; 
+	display: block;
+	height: 0px;
+	clear :both;
+}
+.row
+{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo
+{
+	height: 120px;
+	width: auto;
+	float: left; 
+	margin-top: 20px;	
+}
+.main-nav
+{ 
+	float: right; 
+	margin-top: 60px;
+}
+.main-nav li
+{
+	display: inline-block;  
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a
+{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration:none;
+	font-size: 120%;
+	font-weight: 100;
+	color: red;
+}
+.main-nav li a:hover 
+{
+	border-bottom: 2px solid red;  
+}
+
+ .mobile-icon
+ {
+ 	display: none;
+ }
+
+
+
+
+ .nav
+ {
+ 	font-family: Arial, Helvetica, sans-serif;
+ }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: red;
+    color: yellow;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 25%;
+    width :50%;
+  }
+
+
+
+
+
+ 
+
+
+/*///Responsive View///*/
+
+
+
+
+@media only screen and (max-width: 1180px)
+{
+ .main-content-header
+ {
+ 	width: 100%;
+ 	padding:0 2%;
+ }
+}
+
+@media only screen and (max-width: 998px)
+{
+	h1
+	{
+		font-size: 200%;
+	}
+}
+@media only screen and (max-width:768px)
+{
+	h1
+	{
+		font-size: 180%;
+	}
+	.main-nav{display: none; }
+
+	.mobile-icon
+	{
+		display: inline-block;
+		color: white;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px; 
+	}
+
+	.main-nav 
+	{
+		float: left; 
+	}
+
+	.main-nav li 
+	{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	.btn-full
+	{
+		margin-bottom: 20px;
+	}
+
+	h1
+	{
+		font-size: 160%;
+	}
+}

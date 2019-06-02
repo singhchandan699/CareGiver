@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caregiver|Login/SignUp</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+<body>
+ 
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="../images/logo.png" class="logo">
+				<ul class="main-nav animated bounce" id="check-class">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../services/service.html">Services</a></li>
+					<li><a href="../team/team.html">Our Team</a></li>
+					<li><a href="../contact/contact.html">Contact</a></li>
+					<li><a href="../join/join.html">Join Us</a></li>
+					<li><a href="signup.html">Login/SignUp</a></li>
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+			<br>
+			<div class="login-box">
+				<img src="../images/login icon.png" class="login">
+				<h2 style="font-family: 'Quicksand', sans-serif;">Login Here</h2><br>
+				<form method="post" action="signupprocess.php" style="font-family: 'Quicksand', sans-serif;">
+					<p>Email</p>
+					<input type="text" name="txt_email" placeholder="Email" required>
+					<p>Password</p>
+					<input type="Password" name="txt_password" placeholder="Password" required>
+					<input type="Submit" name="Submit" value="Login">
+					<a href="forget.html">Forgot Password</a>
+					<br>
+					<a href="registration.html">Create An Account</a>
+					<br>
+					<a href="../admin/adminlogin.html">AdminLog In</a>
+
+				</form>
+
+			</div>	
+			</div>
+
+		</nav>
+	</header>
+
+	<script type="text/javascript">
+		function slideshow() 
+		{
+			var x = document.getElementById('check-class');
+			if (x.style.display === "none") {x.style.display="block";}
+			else
+			{
+				x.style.display="none"; 
+			}
+		}
+	</script>
+
+</body>
+</html>

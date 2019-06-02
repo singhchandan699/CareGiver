@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CareGiver's|Join Us</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+ 
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="../images/logo.png" class="logo">
+				<ul class="main-nav animated bounce" id="check-class">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../services/service.html">Services</a></li>
+					<li><a href="../team/team.html">Our Team</a></li>
+					<li><a href="../contact/contact.html">Contact</a></li>
+					<li><a href="join.html">Join Us</a></li>
+					<li><a href="../signup/signup.html">Login/SignUp</a></li>
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+			<div style="font-family: sans-serif; color: red" class="well well.lg">
+				<h2><center><strong>Join Us:-</strong></center></h2>
+			</div>
+			<br>
+			<div class="nav" style="color: black">
+				<div class="container">
+  					<form id="frm_con" method="post" action="joinprocess.php">
+	    				<label for="Name">Name</label>
+	    				<input type="text" name="txt_name" placeholder="Your name.." required>
+
+	    				<label for="gender">Gender</label>
+		    			<select id="gender" name="txt_gender" required>
+		    				<option value="gender">Gender</option>
+		      				<option value="Male">Male</option>
+						    <option value="Female">Female</option>
+						    <option value="Other">Other</option>
+		   				</select>
+
+	    				<label for="Address">Address</label>
+    					<textarea id="Address" name="txt_Address" placeholder="......Address......" style="height:100px" required></textarea>
+
+    					<label for="Mobile Number">Mobile Number</label>
+	    				<input type="text" name="txt_mno" placeholder="Your Mobile Number" required>
+
+	    				<label for="email">Email</label>
+	    				<input type="text" name="txt_email" placeholder="Your Email ID.." required>
+
+	    				<label for="Adhar Card No.">Adhar Card No.</label>
+	    				<input type="text" name="txt_adhar" placeholder="Your Adhar Card No." required>
+
+	    				<label for="Services">Services</label>
+	    				<input type="text" name="txt_ser" placeholder="Services" required>
+
+	    				<label for="Charges">Charges</label>
+	    				<input type="text" name="txt_charge" placeholder="Charges" required>
+
+
+	    				<label for="Photo">Photo</label>
+	    				<input type="file" name="txt_photo" placeholder="Photo" required>
+	    				<br>
+	    				<br>
+
+
+	    				<label for="Timing">Timing</label>
+	    				<input type="time" name="txt_tim" placeholder="Timing" required>
+	    				<br>
+	    				<br>
+
+	    				<label for="date">Date</label>
+	    				<input type="date" name="txt_dat" placeholder="date" required>
+	    				<br>
+	    				<br>
+
+
+    					<input type="submit" name="SignUp-Button" value="Join Us" />
+    				</form>
+   				</div>
+   			</div>	
+		</nav>
+	</header>
+</body>
+</html>

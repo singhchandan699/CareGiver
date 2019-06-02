@@ -1,0 +1,275 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body
+{
+	font-size: 20px;
+	overflow-x: hidden; 
+	color: white; 
+	font-family:'Flamenco',cursive;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/service.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	height: 160vh;
+}
+.clearfix:after
+{
+	content: ".";
+	visibility: hidden; 
+	display: block;
+	height: 0px;
+	clear :both;
+}
+.row
+{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo
+{
+	height: 120px;
+	width: auto;
+	float: left; 
+	margin-top: 20px;	
+}
+.main-nav
+{ 
+	float: right; 
+	margin-top: 60px;
+}
+.main-nav li
+{
+	display: inline-block;  
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a
+{
+	padding: 5px 0;
+	color: #fff;
+	text-decoration:none;
+	font-size: 120%;
+	font-weight: 100;
+	color: skyblue;
+}
+.main-nav li a:hover 
+{
+	border-bottom: 2px solid skyblue;  
+}
+.main-content-header 
+{
+	width: 1180px;
+	position: absolute; 
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1
+{
+	color: #ff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn
+{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration:none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color  0.2s, color0.2;
+}
+.btn-full
+{
+	background-color: transparent;
+	color: #bf55ec; 
+	margin-right: 15px; 
+	border:1px solid #bf55ec;  
+}
+.btn-full:hover
+{
+	background-color: yellow; 
+}
+.btn-nav
+{
+	background-color: transparent;
+	color: yellow;
+	border: 1px solid yellow;	
+}
+.btn-nav:hover
+{
+	background-color:#bf55ec;
+}
+
+.color
+{
+	animation: colorchangecare 1s infinite; 
+}
+ @keyframes colorchangecare
+ {
+	 0%{color: red;}
+	 25%{color: #bf55ec;}
+	 50%{color: green;}
+	 100%{color: yellow;}
+ } 
+ .mobile-icon
+ {
+ 	display: none;
+ }
+
+.services-section
+{
+	font-family: "montserrat",sans-serif;	 
+}
+
+.inner
+{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+	overflow: hidden; 
+}
+.section
+{
+	text-align: center;
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.border
+{
+	width: 160px;
+	height: 2px;
+	background: #82ccdd;
+	margin: 40px auto;
+}
+.Services-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Services-box
+{
+	max-width: 33.33%;
+	padding: 10px;
+	text-align: center;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.Services-icon
+{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: 3px solid #82ccdd;
+	color: #82ccdd;
+	transform: rotate(45deg);
+	margin-bottom: 30px;
+	margin-top: 16px;
+	transition :0.3s linear;
+}
+.Services-icon i
+{
+	line-height: 70px;
+	transform: rotate(-45deg);
+	font-size: 26px;
+}
+.Services-box:hover .Services-icon
+{
+	background: #82ccdd;
+	color: #ddd;
+}
+.Services-title
+{
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.Services-desk
+{
+	font-size: 14px;
+}
+
+
+
+
+
+/*///Responsive View///*/
+
+
+
+
+@media only screen and (max-width: 1180px)
+{
+ .main-content-header
+ {
+ 	width: 100%;
+ 	padding:0 2%;
+ }
+}
+
+@media only screen and (max-width: 998px)
+{
+	h1
+	{
+		font-size: 200%;
+	}
+}
+@media only screen and (max-width:768px)
+{
+	h1
+	{
+		font-size: 180%;
+	}
+	.main-nav{display: none; }
+
+	.mobile-icon
+	{
+		display: inline-block;
+		color: white;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px; 
+	}
+
+	.main-nav 
+	{
+		float: left; 
+	}
+
+	.main-nav li 
+	{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	.btn-full
+	{
+		margin-bottom: 20px;
+	}
+
+	h1
+	{
+		font-size: 160%;
+	}
+}

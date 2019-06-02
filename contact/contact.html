@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CareGiver's|Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="../images/logo.png" class="logo">
+				<ul class="main-nav animated bounce" id="check-class">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../services/service.html">Services</a></li>
+					<li><a href="../team/team.html">Our Team</a></li>
+					<li><a href="../contact/contact.html">Contact</a></li>
+					<li><a href="../join/join.html">Join Us</a></li>
+					<li><a href="../signup/signup.html">Login/SignUp</a></li>
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+			<div class="contact">
+				<h1>Contact Us</h1>
+				<p>
+					Any problem write message and Click to send button
+				</p>
+				<div class="form">
+					<form id="frm_con" method="post" action="contactprocess.php" style="margin-top: 80px;">
+						Full Name<input type="text" name="name"  required>
+						Email<input type="text" name="Email" required>
+						City<input type="text" name="City"  required>
+						Message<input type="text" name="Message" id="msg"  required>
+						<button class="btn btn-nav" onclick="myFunction()">Let's Talk</button> 
+					</form>
+				</div>
+				<script>
+	          		function myFunction() 
+	          		{
+	             	 	alert("Your Contect Send Successfully");
+	         		}
+          		</script>
+			</div>
+			<br><br><br><br><br><br><br>
+
+			<p class="add" scrollamount="10" direction="left" behavior="scroll"><h style="color:white;font-family: sans-serif;" "><center><h2>For More Details:-</h2><br>Our Address:-<br>Lalghati Panchwati Colony Above Panchwati Medical 1st Floor Room No-2  Bhopal (MP)<br>Mobile NO. :-8757781963<br>Email:-singhchandan699@gmail.com</center></h>
+			</p>
+		
+
+
+			
+		</nav>
+	</header>
+
+	<script type="text/javascript">
+		function slideshow() 
+		{
+			var x = document.getElementById('check-class');
+			if (x.style.display === "none") {x.style.display="block";}
+			else
+			{
+				x.style.display="none"; 
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CareGiver's|Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+ 
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="images/logo.png" class="logo">
+				<ul class="main-nav animated bounce" id="check-class">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services/service.html">Services</a></li>
+					<li><a href="team/team.html">Our Team</a></li>
+					<li><a href="contact/contact.html">Contact</a></li>
+					<li><a href="join/join.html">Join Us</a></li>
+					<li><a href="signup/signup.html">Login/SignUp</a></li>
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+		<div class="main-content-header">
+			<h1>WELCOME TO <span class="color"> CARE GIVER</span>.<br>
+			Your Service Expert in India. </h1>
+
+
+
+			<button  class="open open-button" onclick="openForm()">Click to Hire.</button>
+			<div style="font-family:sans-serif;" class="form-popup" id="myForm">
+		 		<form <form method="post" action="signup/signupprocess.php" class="form-container">
+			    	<center><h2 style="color: black">Log In</h2></center><br><br>
+
+			    	<label for="email" style="color:black"><b>Email</b></label>
+			    	<input type="text" placeholder="Enter User Email" name="txt_email" required>
+
+			    	<label for="psw" style="color: black"><b>Password</b></label>
+			    	<input type="password" placeholder="Enter Password" name="txt_password" required>
+
+			    	<button type="submit" class="btn">Login</button>
+			    	<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		  		</form>
+			</div>
+			<a href="showmore.html"><button  class=" btn btn-nav" >Show More.</button></a>
+		</div>
+	</header>
+	<script>
+		function openForm() 
+		{
+		  	document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() 
+		{
+	  		document.getElementById("myForm").style.display = "none";
+		}
+	</script>
+
+	<script type="text/javascript">
+		function slideshow() 
+		{
+			var x = document.getElementById('check-class');
+			if (x.style.display === "none") {x.style.display="block";}
+			else
+			{
+				x.style.display="none"; 
+			}
+		}
+	</script>
+
+</body>
+</html>
